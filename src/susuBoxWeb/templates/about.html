@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}About{% endblock %}
+{% block content %}
+    <div>
+    <div style="margin-top: 5%" class="col-md-8 col-md-offset-2">
+        <h1 class="text-center">One Mission: To give people the power to manage their finances by making it clearer and more transparent.</h1>
+    </div>
+    <br>
+    <div style="margin-top: 5%; margin-bottom: 3%" class="col-md-8 col-md-offset-3">
+        <img style="margin-left: 3%" class="text-center" src="{% static 'img/globe.png' %}" alt="">
+    </div>
+    <br><br>
+    <div class="col-md-6 col-md-offset-3">
+        <h5 class="text-center">Our core team brings together top class talent from the worlds of finance, tech and beyond, representing a strong combination of proven skills and passion to ensure that everyone can better manage their finances.</h5>
+    </div>
+    <br><br>
+    <div style="margin-top: 5%" class="col-md-8 col-md-offset-2">
+        <h1 class="text-center">We Are Known For</h1>
+    </div>
+    <br>
+    <div class="row" >
+        <div class="col-md-3">
+            <img style="padding-left: 35%" src="{% static 'img/transparency.png' %}" alt="">
+            <h3 class="text-center">Transparency</h3>
+        </div>
+        <div class="col-md-3">
+            <img style="padding-left: 25%" src="{% static 'img/idea.png' %}" alt="">
+             <h3 class="text-center">Clarity</h3>
+        </div>
+        <div class="col-md-3">
+            <img style="padding-left: 25%" src="{% static 'img/protection.png' %}" alt="">
+             <h3 class="text-center">Ease</h3>
+        </div>
+        <div class="col-md-3">
+            <img style="padding-left: 25%" src="{% static 'img/innovation.png' %}" alt="">
+            <h3 class="text-center">Innovation</h3>
+        </div>
+    </div>
+    <br><br>
+    <div style="margin: 2% 0 5% 40%" class="col-md-6">
+        <a style="width: 233px; height: 40px; font-size: 20px; font-weight: bolder" href="{% url 'faq' %}" class="btn btn-primary">Visit FAQs</a>
+    </div>
+    </div>
+{% endblock %}
